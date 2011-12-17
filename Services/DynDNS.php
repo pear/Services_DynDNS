@@ -253,13 +253,13 @@ class Services_DynDNS
      * @access public
      * @static
      */
-    function &sendRequest(&$request)
+    function sendRequest($request)
     {
         if (!is_a($request, 'Services_DynDNS_Request_common')) {
             return PEAR::raiseError("Not a valid instance of " .
                                     "'Services_DynDNS_Request_common'");
         }
-        $httpRequest =& $request->build();
+        $httpRequest = $request->build();
         $httpRequest->sendRequest();
         if ($httpRequest->getResponseCode() != '200') {
             return PEAR::raiseError("Unexpected HTTP response code " .

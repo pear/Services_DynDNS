@@ -50,7 +50,7 @@ class Services_DynDNS_Request
      * @access public
      * @static
      */
-    function &factory($type = null, $parameters = array())
+    function factory($type = null, $parameters = array())
     {
         if (is_null($type)) {
             $type = SERVICES_DYNDNS_DEFAULT_SYSTEM;
@@ -61,7 +61,7 @@ class Services_DynDNS_Request
         if (!class_exists($class)) {
             return PEAR::raiseError("'{$class}' doesn't exist");
         }
-        $request =& new $class();
+        $request = new $class();
         foreach ($parameters as $name => $value) {
             $result = $request->setParameter($name, $value);
             if (PEAR::isError($result)) {
