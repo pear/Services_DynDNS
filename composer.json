@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Services_DynDNS": "./"
+            "Services": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Services_DynDNS",
@@ -23,7 +23,8 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/http_request": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
