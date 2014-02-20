@@ -1,0 +1,32 @@
+{
+    "authors": [
+        {
+            "email": "bdunlap@bryandunlap.com",
+            "name": "Bryan Dunlap",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Services": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Services_DynDNS",
+    "include-path": [
+        "./"
+    ],
+    "license": "PHP License",
+    "name": "pear/services_dyndns",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Services_DynDNS",
+        "source": "https://github.com/pear/Services_DynDNS"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*",
+        "pear/http_request": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
